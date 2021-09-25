@@ -1,20 +1,217 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Encuesta
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid>
+    <ion-row class="width-row">
+      <ion-col class="background-color width-p">
+        <p>1</p>
+        <p>Nunca</p>
+      </ion-col>
+
+      <ion-col class="background-color1 width-p">
+        <p>2</p>
+        <p>Casi Nunca</p>
+      </ion-col>
+
+      <ion-col class="background-color2 width-p">
+        <p>3</p>
+        <p>Pocas Veces</p>
+      </ion-col>
+
+      <ion-col class="background-color3 width-p">
+        <p>4</p>
+        <p>Algunas Veces</p>
+      </ion-col>
+
+      <ion-col class="background-color4 width-p">
+        <p>5</p>
+        <p>Frecuente</p>
+      </ion-col>
+
+      <ion-col class="background-color5 width-p">
+        <p>6</p>
+        <p>Muy Frecuente</p>
+      </ion-col>
+    </ion-row>
+   </ion-grid>
+   <div class="ion-padding"></div>
+
+   <!--form-->
+   <ion-list >
+    <ion-radio-group radio-group [(ngModel)]="AnswerOne">
+        <ion-label >Imposibilidad De Conciliar El Sueño</ion-label>
+        <ion-item >
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+   </ion-list>
+
+      <ion-list>
+        <ion-radio-group  radio-group [(ngModel)]="AnswerTwo">
+        <ion-label >Jaquecas Y dolor De Cabeza</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>  
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+      <ion-list>
+        <ion-radio-group radio-group [(ngModel)]="AnswerThree">
+        <ion-label >Indigestion O Molestia GastroInstentinales</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>  
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+      <ion-list>
+        <ion-radio-group radio-group [(ngModel)]="AnswerFour">
+        <ion-label >Sensacion De Cansancio</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>  
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group radio-group [(ngModel)]="AnswerFive">
+        <ion-label >Tendencia De Comer, Beber, Fumar</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>  
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group radio-group [(ngModel)]="AnswerSix">
+        <ion-label >Disminucion Del Interes Sexual</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>  
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group radio-group [(ngModel)]="AnswerSeven">
+        <ion-label >Respiracion EntreCortada O Ahogo</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>  
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group radio-group [(ngModel)]="AnswerEight">
+        <ion-label >Disminucion Del Apetito</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>  
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group radio-group [(ngModel)]="AnswerNine">
+        <ion-label >Temblores Musculares</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio> 
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group radio-group [(ngModel)]="AnswerTen">
+        <ion-label >Pinchazos O Sensaciones Dolorosa En El cuerpo</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>  
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group radio-group [(ngModel)]="AnswerEleven">
+        <ion-label >Tentaciones Fuerte De No Levantarse</ion-label>
+        <ion-item>
+          1<ion-radio class="checkbox-white" value="1"></ion-radio>
+          2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+          3<ion-radio class="checkbox-green" value="3"></ion-radio>
+          4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+          5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+          6<ion-radio class="checkbox-red" value="6"></ion-radio>  
+          </ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+
+    <ion-list>
+      <ion-radio-group radio-group [(ngModel)]="AnswerTwelve">
+      <ion-label >Tendencia A Sudar O Palpitaciones</ion-label>
+      <ion-item>
+        1<ion-radio class="checkbox-white" value="1"></ion-radio>
+        2<ion-radio class="checkbox-blue" value="2"></ion-radio>
+        3<ion-radio class="checkbox-green" value="3"></ion-radio>
+        4<ion-radio class="checkbox-yellow" value="4"></ion-radio>
+        5<ion-radio class="checkbox-salmon" value="5"></ion-radio>
+        6<ion-radio class="checkbox-red" value="6"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
+    <ion-button expand="full" color=secondary (click)="ValueAnswer()">Terminar Encuesta</ion-button>
 </ion-content>

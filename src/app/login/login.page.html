@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Dirrecion De Correo</ion-label>
+        <ion-input formControlName="userEmail" type="email" autocapitalize="off"  aria-autocomplete="none"></ion-input>
+      </ion-item>
+      <ion-item *ngIf="loginFormValidator.userEmail.empty">
+        <ion-label text-wrap color="danger"> {{loginFormValidator.userEmail.empty}}</ion-label>
+      </ion-item>
+  
+      <ion-item *ngIf="loginFormValidator.userEmail.email">
+      <ion-label text-wrap color="danger">{{ loginFormValidator.userEmail.email}}</ion-label>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label position="stacked">Constraseña</ion-label>
+        <ion-input formControlName="userPassword" type="password"></ion-input>
+      </ion-item>
+  
+      <ion-item *ngIf="loginFormValidator.usePassword.empty">
+       <ion-label text-wrap color="danger">{{loginFormValidator.usePassword.empty}}</ion-label>
+      </ion-item>
+  
+    </ion-list>
+    <ion-button type="submit" color="light" expand="full">Entrar</ion-button>
+  </form>
+</ion-content>

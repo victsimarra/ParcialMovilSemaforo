@@ -7,7 +7,6 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
 #container strong {
   font-size: 20px;
   line-height: 26px;
@@ -24,4 +23,115 @@
 
 #container a {
   text-decoration: none;
+}
+.background-color{
+  background-image: linear-gradient(to right,rgb(220, 220, 220),
+                                      rgb(230, 230, 230),
+                                      rgb(40,40,250));
+  color: black;
+  height: 5.9rem;
+  
+}
+.width-p p{
+  padding: 0;
+  margin-block: .5rem;
+}
+.background-color1{
+  background-image: linear-gradient(to right,rgb(39, 39, 248),
+                                             rgb(31, 15, 245),
+                                             rgb(107, 248, 114));
+    color: black;
+    height: 5.9rem;
+    padding: 0;
+}
+.background-color2{
+  background-image: linear-gradient(to right,rgb(107, 248, 114),
+                                             rgb(100, 240, 120),
+                                             rgb(6, 128, 6));
+    color: black;
+    height: 5.9rem;
+    padding: 0;
+}
+.background-color3{
+  background-image: linear-gradient(to right,rgb(6, 128, 6),
+                                             rgb(223, 245, 100),
+                                             rgb(220,200,22));
+    color: black;
+    height: 5.9rem;
+    padding: 0;
+}
+.background-color4{
+  background-image: linear-gradient(to right,rgb(220,200,22),
+                                             rgb(223, 100, 100),
+                                             rgb(200,0,0));
+    color: black;
+    height: 5.9rem;
+    padding: 0;
+}
+.background-color5{
+  background: rgb(200,0,0);
+    color: black;
+    height: 5.9rem;
+    width: 5px;
+    padding: 0;
+}
+ion-item{
+  border: 1px solid rgb(138, 137, 137);
+  border-radius: .5rem;
+  margin-block: .5rem;
+}
+.checkbox-white{
+  background: white;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  margin: 0;
+  margin-inline: .2rem;
+}
+.checkbox-blue{
+  background: blue;
+  border-radius: 50%;
+  height: 25px;
+  margin: 0;
+  margin-inline: .2rem;
+  width: 25px;
+}
+.checkbox-green{
+  background: green;
+  border-radius: 50%;
+  height: 25px;
+  margin: 0;
+  margin-inline: .2rem;
+  width: 25px;
+}
+.checkbox-yellow{
+  background: yellow;
+  border-radius: 100%;
+  margin: 0;
+  height: 25px;
+  margin-inline: .2rem;
+  width: 25px;
+}
+.checkbox-salmon{
+  background: salmon;
+  border-radius: 50%;
+  height: 25px;
+  margin-inline: .2rem;
+  margin: 0;
+  width: 25px;
+}
+.checkbox-red{
+  background: red;
+  border-radius: 50%;
+  height: 25px;
+  margin-inline: .2rem;
+  margin: 0;
+  width: 25px;
+}
+ion-grid{
+  position: fixed;
+  z-index: 1;
+}
+.ion-padding{
+  margin-block-start: 5rem;
 }

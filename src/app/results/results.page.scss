@@ -1,0 +1,44 @@
+ion-col:nth-child(2){
+    border-bottom: 1px solid gray;
+}
+.ResultTitle{
+    margin-block-end: 1rem;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(118, 118, 119,.7);
+}
+.ResultsTitle{
+    background-image: linear-gradient(rgb(220, 220, 220),
+                                      rgb(230, 230, 230),
+                                      rgb(40,40,250));
+      color: black;
+      margin-block-start: 1.5rem;
+}
+.ResultsTitle1{
+    background-image: linear-gradient(rgb(39, 39, 248),
+                                      rgb(31, 15, 245),
+                                      rgb(107, 248, 114));
+    color: black;
+}
+.ResultsTitle2{
+    background-image: linear-gradient(rgb(107, 248, 114),
+                                      rgb(100, 240, 120),
+                                      rgb(6, 128, 6));
+    color: black;
+}
+.ResultsTitle3{
+    background-image: linear-gradient(rgb(6, 128, 6),
+                                      rgb(223, 245, 100),
+                                      rgb(220,200,22));
+    color: black;
+}
+.ResultsTitle4{
+    background-image: linear-gradient(rgb(220,200,22),
+                                      rgb(223, 100, 100),
+                                      rgb(200,0,0));
+    color: black;
+}
+.ResultsTitle5{
+    background: rgb(200,0,0);
+    color: black;
+}
